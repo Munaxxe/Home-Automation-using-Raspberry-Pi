@@ -1,0 +1,353 @@
+ (routes 
+  (resolution mm 100000)
+  (parser
+  )
+  (parser
+  )
+  (structure_out
+   (layer TOP (type signal)
+   )
+   (layer I1 (type signal)
+   )
+   (layer I2 (type signal)
+   )
+   (layer I3 (type signal)
+   )
+   (layer I4 (type signal)
+   )
+   (layer I5 (type signal)
+   )
+   (layer I6 (type signal)
+   )
+   (layer I7 (type signal)
+   )
+   (layer I8 (type signal)
+   )
+   (layer I9 (type signal)
+   )
+   (layer I10 (type signal)
+   )
+   (layer I11 (type signal)
+   )
+   (layer I12 (type signal)
+   )
+   (layer I13 (type signal)
+   )
+   (layer I14 (type signal)
+   )
+   (layer BOT (type signal)
+   )
+  )
+  (library_out
+  (padstack $VIA#0_SIGNAL
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  (padstack $VIA#0_POWER
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  )
+  (network_out
+   (Net #00014 
+   (rule
+   )
+   )
+   (Net #00025 
+   (rule
+   )
+   )
+   (Net #00048 
+   (rule
+   )
+   )
+   (Net +5V 
+   (rule
+   )
+   )
+   (Net AIRCON 
+   (rule
+   )
+   (wire (path TOP 25400  -4738000 5000000 -4738000 4569817 -4953000 4569817
+     -4953000 2286000 -2349500 2286000 -2349500 2754000 -2210000 2754000)
+    (connect (terminal pin D5-1) (terminal pin "RASPBERRY PI 3"-21))
+   )
+   )
+   (Net CLK 
+   (rule
+   )
+   )
+   (Net CS 
+   (rule
+   )
+   )
+   (Net D4 
+   (rule
+   )
+   (wire (path TOP 25400  -190500 3873500 -3480000 3873500 -3480000 2754000)
+    (connect (terminal via) (terminal pin "RASPBERRY PI 3"-11))
+   )
+   (wire (path BOT 25400  1262000 6254000 1262000 6540500 -127000 6540500
+     -127000 3873500 -190500 3873500)
+    (connect (terminal pin LCD3-10) (terminal via))
+   )
+   (via $VIA#0_SIGNAL -190500 3873500)
+   )
+   (Net D5 
+   (rule
+   )
+   (wire (path TOP 25400  -3111500 6413500 1008000 6413500 1008000 6254000)
+    (connect (terminal via) (terminal pin LCD3-11))
+   )
+   (wire (path BOT 25400  -3226000 2500000 -3226000 2349500 -3111500 2349500
+     -3111500 6413500)
+    (connect (terminal pin "RASPBERRY PI 3"-12) (terminal via))
+   )
+   (via $VIA#0_SIGNAL -3111500 6413500)
+   )
+   (Net D6 
+   (rule
+   )
+   (wire (path BOT 25400  -2972000 2500000 -2972000 2286000 -63500 2286000
+     -63500 6413500 754000 6413500 754000 6254000)
+    (connect (terminal pin "RASPBERRY PI 3"-14) (terminal pin LCD3-12))
+   )
+   )
+   (Net D7 
+   (rule
+   )
+   (wire (path TOP 25400  -2984500 6223000 -2984500 6254000 500000 6254000)
+    (connect (terminal via) (terminal pin LCD3-13))
+   )
+   (wire (path BOT 25400  -2972000 2754000 -2972000 3048000 -2984500 3048000
+     -2984500 6223000)
+    (connect (terminal pin "RASPBERRY PI 3"-15) (terminal via))
+   )
+   (via $VIA#0_SIGNAL -2984500 6223000)
+   )
+   (Net ELCD 
+   (rule
+   )
+   (wire (path BOT 25400  -3365500 3429000 -3365500 2500000 -3480000 2500000)
+    (connect (terminal via) (terminal pin "RASPBERRY PI 3"-10))
+   )
+   (wire (path TOP 25400  1778000 3429000 1778000 3427554 -3365500 3427554
+     -3365500 3429000)
+    (connect (terminal via) (terminal via))
+   )
+   (wire (path BOT 25400  1770000 6000000 1770000 3429000 1778000 3429000)
+    (connect (terminal pin LCD3-5) (terminal via))
+   )
+   (via $VIA#0_SIGNAL -3365500 3429000)
+   (via $VIA#0_SIGNAL 1778000 3429000)
+   )
+   (Net GND 
+   (rule
+   )
+   (wire (path BOT 25400  -5500000 5000000 -5500000 4024287 -4242000 4024287
+     -4242000 2754000)
+    (connect (terminal pin D5-0) (terminal pin "RASPBERRY PI 3"-5))
+   )
+   (wire (path BOT 25400  -4750000 8500000 -4750000 8191500 -5500000 8191500
+     -5500000 5000000)
+    (connect (terminal pin D4-0) (terminal pin D5-0))
+   )
+   (wire (path BOT 25400  76000 2500000 500000 2500000 500000 5842000)
+    (connect (terminal pin "RASPBERRY PI 3"-38) (terminal wire))
+   )
+   (wire (path TOP 25400  -4750000 8500000 -4750000 9652000 -3810000 9652000)
+    (connect (terminal pin D4-0) (terminal via))
+   )
+   (wire (path TOP 25400  -686000 2754000 -571500 2754000 -571500 2349500
+     76000 2349500 76000 2500000)
+    (connect (terminal pin "RASPBERRY PI 3"-33) (terminal pin "RASPBERRY PI 3"-38))
+   )
+   (wire (path BOT 25400  -1587500 2921000 -2464000 2921000 -2464000 2754000)
+    (connect (terminal wire) (terminal pin "RASPBERRY PI 3"-19))
+   )
+   (wire (path BOT 25400  -1587500 2921000 -1587500 2984500 -1194000 2984500
+     -1194000 2754000)
+    (connect (terminal wire) (terminal pin "RASPBERRY PI 3"-29))
+   )
+   (wire (path BOT 25400  -1702000 2500000 -1587500 2500000 -1587500 2921000)
+    (connect (terminal pin "RASPBERRY PI 3"-24) (terminal wire))
+   )
+   (wire (path BOT 25400  -4242000 2754000 -4127500 2754000 -4127500 2349500
+     -3734000 2349500 -3734000 2500000)
+    (connect (terminal pin "RASPBERRY PI 3"-5) (terminal pin "RASPBERRY PI 3"-8))
+   )
+   (wire (path BOT 25400  -3810000 9652000 -3683000 9652000 -3683000 10033000)
+    (connect (terminal via) (terminal wire))
+   )
+   (wire (path BOT 25400  -3683000 10033000 -3746000 10033000 -3746000 10250000)
+    (connect (terminal wire) (terminal pin RL2-1))
+   )
+   (wire (path TOP 25400  -3734000 2500000 -3734000 2627000 -3365500 2627000
+     -3365500 2754000 -3226000 2754000)
+    (connect (terminal pin "RASPBERRY PI 3"-8) (terminal pin "RASPBERRY PI 3"-13))
+   )
+   (wire (path BOT 25400  -1000000 9500000 -1000000 10500000)
+    (connect (terminal pin D2-0) (terminal pin D3-0))
+   )
+   (wire (path TOP 25400  -2464000 2754000 -2603500 2754000 -2603500 2921000
+     -3226000 2921000 -3226000 2754000)
+    (connect (terminal pin "RASPBERRY PI 3"-19) (terminal pin "RASPBERRY PI 3"-13))
+   )
+   (wire (path BOT 25400  1008000 6000000 1008000 5842000 1516000 5842000
+     1516000 6000000)
+    (connect (terminal pin LCD3-2) (terminal pin LCD3-4))
+   )
+   (wire (path TOP 25400  -1194000 2754000 -1194000 2984500 -686000 2984500
+     -686000 2754000)
+    (connect (terminal pin "RASPBERRY PI 3"-29) (terminal pin "RASPBERRY PI 3"-33))
+   )
+   (wire (path BOT 25400  -3492000 10250000 -3492000 10033000 -3683000 10033000)
+    (connect (terminal pin RL2-2) (terminal wire))
+   )
+   (wire (path TOP 25400  1770000 6254000 1516000 6254000)
+    (connect (terminal pin LCD3-8) (terminal pin LCD3-9))
+   )
+   (wire (path BOT 25400  1516000 6000000 1516000 6254000)
+    (connect (terminal pin LCD3-4) (terminal pin LCD3-9))
+   )
+   (wire (path TOP 25400  2024000 6254000 1770000 6254000)
+    (connect (terminal pin LCD3-7) (terminal pin LCD3-8))
+   )
+   (wire (path BOT 25400  2024000 6000000 2024000 6254000)
+    (connect (terminal pin LCD3-6) (terminal pin LCD3-7))
+   )
+   (wire (path BOT 25400  952500 5842000 952500 6000000 1008000 6000000)
+    (connect (terminal wire) (terminal pin LCD3-2))
+   )
+   (wire (path BOT 25400  952500 5842000 500000 5842000)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 25400  500000 6000000 500000 5842000)
+    (connect (terminal pin LCD3-0) (terminal wire))
+   )
+   (wire (path TOP 25400  -3810000 9652000 -3810000 9500000 -1000000 9500000)
+    (connect (terminal via) (terminal pin D2-0))
+   )
+   (via $VIA#0_POWER -3810000 9652000)
+   )
+   (Net GPIO12 
+   (rule
+   )
+   )
+   (Net GPIO13 
+   (rule
+   )
+   )
+   (Net GPIO16 
+   (rule
+   )
+   )
+   (Net GPIO19 
+   (rule
+   )
+   )
+   (Net GPIO20 
+   (rule
+   )
+   )
+   (Net GPIO21 
+   (rule
+   )
+   )
+   (Net GPIO26 
+   (rule
+   )
+   )
+   (Net GPIO7 
+   (rule
+   )
+   )
+   (Net LAMP 
+   (rule
+   )
+   (wire (path BOT 25400  -2718000 2754000 -2718000 5826606 -825500 5826606
+     -825500 10223500 -238000 10223500 -238000 10500000)
+    (connect (terminal pin "RASPBERRY PI 3"-17) (terminal pin D3-1))
+   )
+   )
+   (Net MISO 
+   (rule
+   )
+   )
+   (Net MOSI 
+   (rule
+   )
+   )
+   (Net PLUGS 
+   (rule
+   )
+   (wire (path BOT 25400  -940000 2500000 -940000 2349500 -571500 2349500
+     -571500 5502702 -238000 5502702 -238000 9500000)
+    (connect (terminal pin "RASPBERRY PI 3"-30) (terminal pin D2-1))
+   )
+   )
+   (Net RSLCD 
+   (rule
+   )
+   (wire (path TOP 25400  1262000 6000000 1262000 5123243 -3873500 5123243
+     -3873500 2500000 -3988000 2500000)
+    (connect (terminal pin LCD3-3) (terminal pin "RASPBERRY PI 3"-6))
+   )
+   )
+   (Net SCL 
+   (rule
+   )
+   )
+   (Net SDA 
+   (rule
+   )
+   )
+   (Net STOVE 
+   (rule
+   )
+   (wire (path BOT 25400  -3988000 8500000 -3988000 8191500 -2857500 8191500
+     -2857500 2349500 -1194000 2349500 -1194000 2500000)
+    (connect (terminal pin D4-1) (terminal pin "RASPBERRY PI 3"-28))
+   )
+   (wire (path BOT 25400  -3988000 8500000 -4000000 8500000 -4000000 10250000)
+    (connect (terminal pin D4-1) (terminal pin RL2-0))
+   )
+   )
+   (Net VCC/VDD 
+   (rule
+   )
+   (wire (path TOP 25400  -4750000 2500000 -4750000 2349500 -2718000 2349500
+     -2718000 2500000)
+    (connect (terminal pin "RASPBERRY PI 3"-0) (terminal pin "RASPBERRY PI 3"-16))
+   )
+   )
+  )
+ )
